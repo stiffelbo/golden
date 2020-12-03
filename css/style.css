@@ -1,3 +1,13 @@
+/* Global */
+/*Resets*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid magenta;
+}
+
 header {
   background-image: url("../images/header_bg.jpg");
   background-position: center center;
@@ -6,22 +16,51 @@ header {
 }
 
 header nav ul {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 header nav ul li {
-  display: inline;
+  display: inline-block;
   list-style: none;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+header nav ul li:first-of-type {
+  text-transform: none;
+  text-align: left;
 }
 
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-header nav ul li a:first-of-type {
-  text-transform: none;
-  text-align: left;
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+footer {
+  width: 100%;
+}
+
+footer .disclaimer {
+  line-height: 60px;
+}
+
+footer .social li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+  font-size: 32px;
+  line-height: 60px;
+  color: 000000;
+  /*box properties*/
+  margin: 48px 12px;
+  background: #2e2e2e;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
