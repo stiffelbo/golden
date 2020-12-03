@@ -1,4 +1,22 @@
-nav ul li {
-    display: inline;
-    list-style: none;
+header {
+    background-image: url('../images/header_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-height: 881px;
+    nav ul {
+        padding-top: 3rem;
+        li {
+            display: inline;
+            list-style: none;
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:first-of-type {
+                    text-transform: none;
+                    text-align: left;
+                }
+            }
+        }
+    }
 }

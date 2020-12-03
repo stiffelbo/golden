@@ -1,5 +1,27 @@
-nav ul li {
+header {
+  background-image: url("../images/header_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 881px;
+}
+
+header nav ul {
+  padding-top: 3rem;
+}
+
+header nav ul li {
   display: inline;
   list-style: none;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a:first-of-type {
+  text-transform: none;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
