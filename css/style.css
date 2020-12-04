@@ -3,17 +3,22 @@ a {
   cursor: pointer;
 }
 
-/*Resets*/
+/*
+* {
+    border: 1px solid magenta;
+}
+*/
+/*Resets */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  border: 1px solid magenta;
 }
 
 header {
   position: relative;
+  padding-top: 20px;
   background-image: url("../images/header_bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -21,6 +26,7 @@ header {
 }
 
 header .tint {
+  position: absolute;
   display: block;
   top: 0;
   left: 0;
@@ -51,9 +57,13 @@ header nav .nav-links ul li .nav-link {
   margin: 8px 20px 0 20px;
 }
 
+header .greetings {
+  margin-top: 200px;
+}
+
 header .greetings img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 
 .portfolio {
