@@ -16,6 +16,7 @@ a {
   margin: 0;
 }
 
+/*variables*/
 header {
   position: relative;
   padding-top: 20px;
@@ -66,8 +67,93 @@ header .greetings img {
   margin: 0 auto 60px auto;
 }
 
+.services {
+  margin: 150px 0;
+}
+
+.services .services-card {
+  text-align: center;
+}
+
+.services .services-card img {
+  width: 73;
+  height: 73;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.services .services-card img:hover {
+  border: 4px solid #fed136;
+}
+
+.services .services-card h4 {
+  margin-top: 1rem;
+  color: #000000;
+}
+
+.services .services-card p {
+  margin-top: 1rem;
+  color: #777777;
+}
+
 .portfolio {
+  padding-top: 100px;
   background-color: #f7f7f7;
+  text-align: center;
+}
+
+.portfolio h2 {
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  margin: 1.5rem 0 2rem 0;
+  color: #777777;
+}
+
+.portfolio .portfolio-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #ffffff;
+  min-height: 450px;
+}
+
+.portfolio .portfolio-card .card-image {
+  position: relative;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.portfolio .portfolio-card .card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio .portfolio-card .card-footer {
+  -ms-flex: 1;
+      flex: 1;
+  max-height: 3rem;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio .portfolio-card p {
+  margin: 0.1rem 0 2rem 0;
+  color: #777777;
 }
 
 footer {

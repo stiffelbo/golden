@@ -21,6 +21,14 @@ a {
     margin: 0;
 }
 
+
+/*variables*/
+
+$color-gold: #fed136;
+$color-primary-background: #ffffff;
+$color-secondary-background: #f7f7f7;
+$color-primary-text: #000000;
+$color-secondary-text: #777777;
 header {
     position: relative;
     padding-top: 20px;
@@ -64,8 +72,72 @@ header {
     }
 }
 
+.services {
+    margin: 150px 0;
+    .services-card {
+        text-align: center;
+        img {
+            width: 73;
+            height: 73;
+            border: 4px solid transparent;
+            border-radius: 50%;
+            box-sizing: border-box;
+            &:hover {
+                border: 4px solid #fed136;
+            }
+        }
+        h4 {
+            margin-top: 1rem;
+            color: $color-primary-text;
+        }
+        p {
+            margin-top: 1rem;
+            color: $color-secondary-text;
+        }
+    }
+}
+
 .portfolio {
+    padding-top: 100px;
     background-color: #f7f7f7;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+    }
+    p {
+        margin: 1.5rem 0 2rem 0;
+        color: $color-secondary-text;
+    }
+    .portfolio-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-primary-background;
+        min-height: 450px;
+        .card-image {
+            position: relative;
+            flex: 1;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .card-footer {
+            flex: 1;
+            max-height: 3rem;
+            width: 100%;
+            align-self: flex-end;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p {
+            margin: 0.1rem 0 2rem 0;
+            color: $color-secondary-text;
+        }
+    }
 }
 
 footer {
